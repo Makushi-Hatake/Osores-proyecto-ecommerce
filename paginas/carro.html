@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/logo1.png">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <title>Tu Carrito</title>
+    <script src="https://kit.fontawesome.com/eb6abe4dca.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- Grid Contenedor -->
+<div id="containerCarro">
+
+    <!--Inicio de Header + Nav-->
+    <header class="header">
+        <nav class="header__nav">    
+                <ul>
+                    <li><a href="../paginas/accesorios.html">Accesorios</a></li>
+                    <li><a href="../paginas/indumentaria.html">Indumentaria</a></li>                
+                    <li><a href="../paginas/carro.html"><i class="fas fa-shopping-cart"></i>Carro</a></li>
+                    <li><a href="../index.html"><i class="fas fa-home"></i>Home</a></li>
+                    <li><a href="../paginas/registrarse.html"><i class="fas fa-sign-in-alt"></i>Registrarse/Ingresar</a></li>
+                    <li><a href="../paginas/logout.html"><i class="fas fa-sign-out-alt"></i>Salir</a></li>
+                </ul>            
+        </nav>     
+        
+    </header>
+<!-- Inicio section -->
+<section class="sectionCarro">
+    <div class="tuCompra">
+        <h2>TU COMPRA</h2>
+    </div>
+    
+
+    <div class="procesoPago">
+    
+    <div class="listado">
+        <table>
+            <tr>
+                <th>Producto</th>
+                <th>Cantidad</th>
+                <th>Precio</th>
+            </tr>
+            <tr>
+                <td>ej:Remera Demon Slayer</td>
+                <td>2</td>
+                <td>$500</td>
+            </tr>
+            <tr>
+                <td>ej:Anillo Akatsuki Itachi</td>
+                <td>2</td>
+                <td>$200</td>
+            </tr>
+            <tr>
+                <td>ej:Reloj Full Metal Alchemist</td>
+                <td>1</td>
+                <td>$1.500</td>
+            </tr>
+        </table>
+    </div>
+        <div class="metodosPago">
+            <i class="fab fa-cc-visa"></i>
+            <i class="fas fa-credit-card"></i>
+            <i class="fas fa-university"></i>
+            <form action="" class="pagando">
+                <select name="pago">
+                    <option value="debito">Tarjeta de Debito</option>
+                    <option value="credito">Tarjeta de Crédito</option>
+                    <option value="transferencia">Transferencia Bancaria</option>
+                </select>
+                <label for="comprar" class="comprar"></label>
+                <input type="submit" value="Comprar">
+            </form>
+        </div>
+    </div>
+</section>
+<br>
+    
+<!--Inicio del Footer-->
+<footer class="footer">
+    <div class="footer__content1">
+        <div class="footer__content1Socials">        
+            <a href="http://facebook.com"><i class="fab fa-facebook-square"></i></a>
+            <a href="http://instragram.com"><i class="fab fa-instagram-square"></i></a>
+            <a href="http://gmail.com"><i class="fas fa-envelope-square"></i></a>   
+        </div>
+        <div class="footer__content1Rigths">
+            <p>Todos los derechos reservados - 2021 - Makushi Dev</p>       
+        </div>
+        <div class="footer__content1Aboutus">
+            <a href="../paginas/aboutus.html">Sobre Nosotros</a>
+        </div>
+    </div>
+</footer>
+</div>    
+</body>
+</html>

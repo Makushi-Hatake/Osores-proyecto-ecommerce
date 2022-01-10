@@ -1,0 +1,415 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    font-family: 'Roboto Slab', serif;
+    
+}
+
+/* ------CONTENEDOR------ */
+
+#container{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "section"
+    "footer"
+    ;
+
+
+}
+
+/**---------HEADER--------**/
+
+.header{
+    height: 4rem;
+    background-color: black;
+    grid-area: header;
+    position: sticky;
+    top: 0%;
+    box-shadow: 0px 15px 15px white;
+}
+
+
+    
+
+/** ----------- NAVBAR --------**/
+.header__nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;  
+    height: 4rem;
+    grid-area: nav;
+    
+}
+.header__nav ul{ 
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    list-style-type: none; 
+    text-align: center;
+    align-items: center;     
+ 
+}
+.header__nav li {
+    display: inline-block;
+    padding: 1rem;
+
+}
+
+.header__nav a {
+    text-decoration: none;
+    color: white;    
+}
+.header__nav a:hover{
+    text-decoration:underline;
+}
+
+/**---------SECTION---------**/
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;  
+    background-image: url(../assets/fondomanga.jpg);
+    background-repeat: repeat-x;
+    background-size: contain;
+    grid-area: section;
+
+    
+}
+
+.section__image{  
+    display: flex;
+    height: 70%;
+    justify-content: center; 
+    box-shadow: -10px -10px 15px black, 10px 10px 15px black;
+
+}
+
+/** ----------FOOTER-----------**/
+
+.footer {
+    background-color: black;
+    grid-area: footer;
+    height: 3rem;
+    box-shadow: 0px -15px 15px white;
+    
+}
+
+.footer__content1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;  
+    align-items: center;
+    
+}
+.footer__content1Socials a{
+    padding: 1rem;
+    padding-bottom: 1.5rem;
+    padding-top: 2rem;
+}
+
+.footer__content1Socials i{
+    color: white;
+    text-shadow: none;
+    box-shadow: 3px 3px 5px rgb(209, 27, 27);
+}
+
+.footer__content1Rigths {
+    color: white;
+}
+
+.footer__content1Aboutus a{
+    text-decoration: none;
+    color: white;
+    
+}
+.footer__content1Aboutus a:hover{
+    text-decoration: underline;
+}
+
+/**----PAGINA ACCESORIOS------**/
+
+.accesorios{
+    display: grid;
+    grid-template-areas: 
+    "item1 item2 item3";
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(../assets/fondomanga.jpg);
+    
+}
+
+.accesorios img{
+    height: 10rem;
+    width: 10rem;
+}
+
+.accesorios__item1{
+    border: 3px solid black;
+    grid-area: item1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 15px 15px 10px black;
+}
+
+.accesorios__item2{
+    border: 3px solid black;
+    grid-area: item2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 15px 15px 10px black;
+}
+.accesorios__item3{
+    border: 3px solid black;
+    grid-area: item3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 15px 15px 10px black;
+   
+}
+
+/**-----PAGINA INDUMENTARIA--------**/
+
+.indumentaria{
+    display: grid;
+    grid-template-areas: 
+    "item1 item2 item3";
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(../assets/fondomanga.jpg);
+    
+}
+.indumentaria img{
+    height: 10rem;
+    width: 10rem;
+}
+
+.indumentaria__item1{
+    border: 3px solid black;
+    grid-area: item1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 15px 15px 10px black;
+}
+.indumentaria__item2{
+    border: 3px solid black;
+    grid-area: item2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 15px 15px 10px black;
+}
+.indumentaria__item3{
+    border: 3px solid black;
+    grid-area: item3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 15px 15px 10px black;
+}
+
+/* -----PAGINA CARRO DE COMPRAS------- */
+
+#containerCarro{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "sectionCarro"
+    "footer"
+    ;
+}
+
+.tuCompra{
+    display: flex;
+    padding: 1.5rem;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 15px 15px 10px black;
+
+}
+
+.sectionCarro{
+    grid-area: sectionCarro;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    padding: 3rem;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(../assets/fondomanga.jpg);
+}
+
+.procesoPago{
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 15px 15px 10px black;
+}
+
+.listado{
+    padding:3rem;
+}
+.metodosPago{
+    padding: 2rem;
+}
+.metodosPago i{
+    padding: 0.5rem;
+}
+.pagando{
+    display: flex;
+    flex-direction: column;
+}
+.comprar{
+    padding: 0.5rem;
+}
+
+/* -------PAGINA PARA REGISTRARSE */
+
+#containerRegistrarse{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "formularioRegistro"
+    "footer"
+    ;
+}
+
+.formularioRegistro{
+    grid-area: formularioRegistro;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    padding: 3rem;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(../assets/fondomanga.jpg);
+
+}
+.formularioRegistro__datosUsuario{
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 15px 15px 10px black;
+    height: 70%;
+
+}
+.formularioRegistro__datosUsuario--datosPersonales{
+    padding: 0.5rem;
+}
+.formularioRegistro__datosUsuario--datosPersonales label input{
+    padding: 2.5rem;
+}
+#fieldset1{
+    padding: 1rem;
+}
+#fieldset2{
+    padding: 1rem;
+}
+
+/* ------PAGINA LOGOUT----------- */
+
+#containerLogout{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "logout"
+    "footer"
+    ;
+}
+.logout{
+    grid-area: logout;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    justify-content: space-evenly; 
+    padding: 3rem;
+    height: 65vh;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(../assets/fondomanga.jpg);
+}
+
+.logout img{
+    border: 6px solid black;
+    box-shadow: 15px 15px 10px black;
+}
+
+.logout__saludo{
+    background-color: white;
+    box-shadow: 15px 15px 10px black;
+    padding: 1rem;
+    border: 5px solid black;
+
+}
+
+/* -------PAGINA SOBRE NOSOTROS */
+
+#containerAboutus{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "descripcion"
+    "footer"
+    ;
+}
+.descripcion{
+    grid-area: descripcion;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    justify-content: space-evenly; 
+    padding: 3rem;
+    height: 65vh;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(../assets/fondomanga.jpg);
+
+}
+
+.comentarios{
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 15px 15px 10px black;
+    height: 70%;
+}
+.nombremarca{
+    background-color: white;
+    box-shadow: 15px 15px 10px black;
+    margin-bottom: 1rem;
+    border: 3px solid black;
+}
+.historia{
+    background-color: white;
+    box-shadow: 15px 15px 10px black;
+    margin-bottom: 1rem;
+    border: 3px solid black;
+}
