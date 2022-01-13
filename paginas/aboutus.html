@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../assets/logo1.png">
+    <link rel="stylesheet" href="/css-bt/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
     <title>Sobre Nosotros</title>
@@ -14,7 +15,8 @@
 
 <body>
 <!-- Grid Contenedor -->
-<div class="container-fluid" id="containerAboutus">
+<div class="container-fluid">
+
 
     <!--Inicio de Header + Nav-->
     <header class="header">
@@ -48,8 +50,8 @@
                 <label for="name">Nombre y Apellido</label>
                 <input type="text" name="name" id="" required><br>
                 <label for="mail">Email de contacto</label>
-                <input type="email" name="mail" id="" required><br>
-                <textarea name="comment" id="" cols="30" rows="10"></textarea><br>
+                <input type="email" name="mail" id="" required><br><br>
+                <textarea name="comment" id="" cols="30" rows="10" maxlength="150"></textarea><br>
                 <input type="submit" value="Enviar comentarios">
             </fieldset>
 
@@ -72,6 +74,7 @@
         </div>
     </div>
 </footer>
+
 </div>
 </body>
 
