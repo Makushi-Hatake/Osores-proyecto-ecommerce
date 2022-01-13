@@ -305,7 +305,6 @@ body {
     flex-direction: column;
     align-items: center;    
     padding: 3rem;
-    height: 100vh;
     justify-content: space-around;
     align-items: center;
     background-image: url(../assets/fondomanga.jpg);
@@ -318,7 +317,6 @@ body {
     align-items: center;
     background-color: white;
     box-shadow: 15px 15px 10px black;
-    height: 70%;
 
 }
 .formularioRegistro__datosUsuario--datosPersonales{
@@ -336,22 +334,11 @@ body {
 
 /* ------PAGINA LOGOUT----------- */
 
-#containerLogout{
-    display: grid;
-    grid-template-areas: 
-    "header"
-    "logout"
-    "footer"
-    ;
-}
 .logout{
     grid-area: logout;
     display: flex;
     flex-direction: column;
-    align-items: center;   
-    justify-content: space-evenly; 
     padding: 3rem;
-    height: 65vh;
     justify-content: space-around;
     align-items: center;
     background-image: url(../assets/fondomanga.jpg);
@@ -372,23 +359,11 @@ body {
 
 /* -------PAGINA SOBRE NOSOTROS */
 
-#containerAboutus{
-    display: grid;
-    grid-template-areas: 
-    "header"
-    "descripcion"
-    "footer"
-    ;
-}
+
 .descripcion{
-    grid-area: descripcion;
     display: flex;
     flex-direction: column;
-    align-items: center;   
-    justify-content: space-evenly; 
     padding: 3rem;
-    height: 65vh;
-    justify-content: space-around;
     align-items: center;
     background-image: url(../assets/fondomanga.jpg);
 
@@ -396,23 +371,23 @@ body {
 
 .comentarios{
     border: 3px solid black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-color: white;
     box-shadow: 15px 15px 10px black;
-    height: 70%;
     padding: 0.25rem;
 }
 .comentarios textarea{
     resize: none;
 
 }
+.comentarios--campo{
+    padding: 0.25rem;
+}
 .nombremarca{
     background-color: white;
     box-shadow: 15px 15px 10px black;
     margin-bottom: 1rem;
     border: 3px solid black;
+    padding: 0.15rem;
 }
 .historia{
     background-color: white;

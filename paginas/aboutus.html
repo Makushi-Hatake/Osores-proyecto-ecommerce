@@ -15,7 +15,7 @@
 
 <body>
 <!-- Grid Contenedor -->
-<div class="container-fluid">
+<div class="container-fluid" id="containerAboutus">
 
 
     <!--Inicio de Header + Nav-->
@@ -46,13 +46,24 @@
 <!-- Inicio formulario de comentarios -->
         <form action="" class="comentarios">
             <fieldset class="comentarios__fieldset">
-                <legend>Dejanos tus comentarios</legend>
-                <label for="name">Nombre y Apellido</label>
-                <input type="text" name="name" id="" required><br>
-                <label for="mail">Email de contacto</label>
-                <input type="email" name="mail" id="" required><br><br>
-                <textarea name="comment" id="" cols="30" rows="10" maxlength="150"></textarea><br>
-                <input type="submit" value="Enviar comentarios">
+                <div>
+                    <h3>Dejanos tus comentarios</h3>
+                </div>
+                <div class="comentarios--campo">
+                    <label for="name">Nombre y Apellido</label>
+                    <input type="text" name="name" id="" required>
+                </div>
+                <div class="comentarios--campo">
+                    <label for="mail">Email de contacto</label>
+                    <input type="email" name="mail" id="" required>
+                </div>
+                <div class="comentarios--campo">
+                    <textarea name="comment" id="" cols="30" rows="10" maxlength="150"></textarea><br>
+                    <input type="submit" value="Enviar comentarios">
+                </div>
+               
+                
+                
             </fieldset>
 
         </form>
