@@ -352,6 +352,8 @@ body {
     justify-content: space-around;
     align-items: center;
     background-image: url(../assets/fondomanga.jpg);
+    height: 100vh;
+    
 }
 
 .logout img{
