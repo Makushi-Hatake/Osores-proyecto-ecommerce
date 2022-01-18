@@ -1,0 +1,45 @@
+// Variables para cards de los items de sección Accesorios e Indumentaria
+
+$item-box-border: 3px solid black;
+$item-box-shadow: 15px 15px 10px black;
+$item-img-dimensionh: 10rem;
+$item-img-dimensionw: 10rem;
+
+// Anidado de Header y Navbar
+
+.header{
+    height: 4rem;
+    background-color: black;
+    grid-area: header;
+    position: sticky;
+    top: 0%;
+    box-shadow: 0px 15px 15px white;
+
+.header__nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;  
+    height: 4rem;
+    grid-area: nav;
+    ul{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        list-style-type: none; 
+        text-align: center;
+        align-items: center;  
+        li{
+            display: inline-block;
+            padding: 1rem;
+
+        }
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}
+}
+
+
+
