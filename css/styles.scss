@@ -1,16 +1,19 @@
-// Variables para cards de los items de sección Accesorios e Indumentaria
+// Variables
 
-$item-box-border: 3px solid black;
 $item-box-shadow: 15px 15px 10px black;
-$item-img-dimensionh: 10rem;
-$item-img-dimensionw: 10rem;
+
+
+ 
 
 // Anidado de Header y Navbar
 
+#container{
+    padding:0px;
+    height: 100vh;
+}
 .header{
     height: 4rem;
     background-color: black;
-    grid-area: header;
     position: sticky;
     top: 0%;
     box-shadow: 0px 15px 15px white;
@@ -41,5 +44,120 @@ $item-img-dimensionw: 10rem;
 }
 }
 
+// HOME anidado
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;  
+    background-image: url(../assets/fondomanga.jpg);
+    background-size: contain;
+
+    .section__image{  
+        display: flex;
+        height: 70%;
+        justify-content: center; 
+        box-shadow: -10px -10px 15px black, 10px 10px 15px black;
+    }
+}
+
+// FOOTER Anidado
+
+.footer {
+    background-color: black;
+    height: 3rem;
+    box-shadow: 0px -15px 15px white;
+    color: white;
+    text-decoration: none;
+    
+    .footer__content1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;  
+        align-items: center;
+        
+    }
+
+    .footer__content1Socials a{
+        padding: 1rem;
+        padding-bottom: 1.5rem;
+        padding-top: 2rem;
+    }
+    
+    .footer__content1Socials i{
+        color: white;
+        text-shadow: none;
+        box-shadow: 3px 3px 5px rgb(209, 27, 27);
+    }
+    
+    .footer__content1Aboutus a{
+        text-decoration: none;
+        color: white;
+        
+    }
+    .footer__content1Aboutus a:hover{
+        text-decoration: underline;
+    }
+}
+
+/**----PAGINA ACCESORIOS------**/
+
+#containerAccesorios{
+    padding: 0%;
+}
+.accesorios{
+    display: grid;
+    grid-template-areas: 
+    "item1 item2 item3";
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(../assets/fondomanga.jpg);
+    
+    img{
+        height: 10rem;
+        width: 10rem;
+    }
+}
 
 
+.accesorios__item1{
+    border: 3px solid black;
+    grid-area: item1;
+    grid-row: 1;
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: $item-box-shadow;
+}
+
+.accesorios__item2{
+    border: 3px solid black;
+    grid-area: item2;
+    grid-row: 1;
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: $item-box-shadow;
+    
+}
+.accesorios__item3{
+    border: 3px solid black;
+    grid-area: item3;
+    grid-row: 1;
+    grid-column: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: $item-box-shadow;
+   
+}
+
+
+ 
