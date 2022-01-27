@@ -252,9 +252,13 @@ body {
 
 .indumentaria__item1 {
   border: 3px solid black;
-  grid-row: 1;
-  grid-column: 1;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: item1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 1;
+  grid-column: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -272,9 +276,13 @@ body {
 
 .indumentaria__item2 {
   border: 3px solid black;
-  grid-row: 1;
-  grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: item2;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 2;
+  grid-column: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -292,9 +300,13 @@ body {
 
 .indumentaria__item3 {
   border: 3px solid black;
-  grid-row: 1;
-  grid-column: 3;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
   grid-area: item3;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 3;
+  grid-column: 3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -314,9 +326,7 @@ body {
 #containerCarro {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header"
- "sectionCarro"
- "footer";
+      grid-template-areas: "header" "sectionCarro" "footer";
   padding: 0%;
 }
 
@@ -340,9 +350,13 @@ body {
 }
 
 .sectionCarro {
-  grid-row: 2;
-  grid-column: 1;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: sectionCarro;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 1;
+  grid-column: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -408,16 +422,18 @@ body {
 #containerRegistrarse {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header"
- "formularioRegistro"
- "footer";
+      grid-template-areas: "header" "formularioRegistro" "footer";
   padding: 0%;
 }
 
 .formularioRegistro {
-  grid-row: 2;
-  grid-column: 1;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: formularioRegistro;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 1;
+  grid-column: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -564,12 +580,16 @@ body {
 @media (max-width: 575.98px) {
   .header {
     position: unset;
+    height: 6rem;
   }
   .header__nav ul {
-    display: inline-block;
-  }
-  .header__nav li {
-    padding: 0.25rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0rem;
   }
   .accesorios {
     display: -webkit-box;
@@ -588,6 +608,9 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  #containerIndumentaria {
+    width: 100%;
   }
   .footer__content1 {
     display: -webkit-box;
