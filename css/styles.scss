@@ -15,7 +15,7 @@ $item-box-shadow: 15px 15px 10px black;
     height: 100vh;
 }
 .header{
-    height: 4rem;
+    height: 5rem;
     background-color: black;
     position: sticky;
     top: 0%;
@@ -44,6 +44,7 @@ $item-box-shadow: 15px 15px 10px black;
         color: white;
     }
 }
+
 /**------- HOME anidado -------**/
 .section {
     display: flex;
@@ -354,15 +355,6 @@ $item-box-shadow: 15px 15px 10px black;
 /* ------MEDIA QUERIES------- */
 /* Celulares */
 @media (max-width: 575.98px) {
-    .header{
-        position: unset;
-        height: 6rem;
-    }
-    .header__nav ul {
-        display: flex;
-        justify-content: center;
-        padding: 0rem;
-    }
     .accesorios{
         display:flex;
         flex-direction:column;
