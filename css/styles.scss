@@ -109,6 +109,9 @@ $item-box-shadow: 15px 15px 10px black;
         height: 10rem;
         width: 10rem;
     }
+    i:hover{
+        cursor: pointer;
+    }
 }
 .accesorios__item1{
     border: 3px solid black;
@@ -155,6 +158,9 @@ $item-box-shadow: 15px 15px 10px black;
     justify-content: space-around;
     align-items: center;
     background-image: url(../assets/fondomanga.jpg);   
+    i:hover{
+        cursor: pointer;
+    }
 }
 .indumentaria img{
     height: 10rem;

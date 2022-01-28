@@ -156,6 +156,10 @@ body {
   width: 10rem;
 }
 
+.accesorios i:hover {
+  cursor: pointer;
+}
+
 .accesorios__item1 {
   border: 3px solid black;
   -ms-grid-row: 1;
@@ -238,6 +242,10 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background-image: url(../assets/fondomanga.jpg);
+}
+
+.indumentaria i:hover {
+  cursor: pointer;
 }
 
 .indumentaria img {
