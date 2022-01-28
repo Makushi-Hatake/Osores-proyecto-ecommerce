@@ -42,7 +42,9 @@ $item-box-shadow: 15px 15px 10px black;
         text-decoration: underline;
     }
 }
-
+.nav{
+    padding-top: 1rem;
+}
 /**------- HOME anidado -------**/
 .section {
     display: flex;
@@ -257,6 +259,7 @@ $item-box-shadow: 15px 15px 10px black;
     "footer"
     ;
     padding: 0%;
+    height: 100vh;
 }
 .formularioRegistro{
     grid-area: formularioRegistro;
@@ -269,6 +272,7 @@ $item-box-shadow: 15px 15px 10px black;
     justify-content: space-around;
     align-items: center;
     background-image: url(../assets/fondomanga.jpg);
+    height: 100vh;
 }
 .formularioRegistro__datosUsuario{
     border: 3px solid black;
