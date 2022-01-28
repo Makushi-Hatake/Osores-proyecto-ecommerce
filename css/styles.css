@@ -54,6 +54,10 @@ body {
   text-decoration: underline;
 }
 
+.header nav {
+  padding-top: 1rem;
+}
+
 /**------- HOME anidado -------**/
 .section {
   display: -webkit-box;
@@ -415,6 +419,7 @@ body {
   display: grid;
       grid-template-areas: "header" "formularioRegistro" "footer";
   padding: 0%;
+  height: 100vh;
 }
 
 .formularioRegistro {
@@ -440,6 +445,7 @@ body {
       justify-content: space-around;
   align-items: center;
   background-image: url(../assets/fondomanga.jpg);
+  height: 100vh;
 }
 
 .formularioRegistro__datosUsuario {
