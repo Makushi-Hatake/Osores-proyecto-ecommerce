@@ -442,6 +442,72 @@ body {
   padding: 0.5rem;
 }
 
+/* -------PAGINA PARA REGISTRARSE */
+#containerRegistrarse {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "header" "formularioRegistro" "footer";
+  padding: 0%;
+  height: 100vh;
+}
+
+.formularioRegistro {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: formularioRegistro;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  align-items: center;
+  background-image: url(../assets/fondomanga.jpg);
+  height: 100vh;
+}
+
+.formularioRegistro__datosUsuario {
+  border: 3px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+}
+
+.formularioRegistro__datosUsuario--datosPersonales {
+  padding: 0.5rem;
+}
+
+.formularioRegistro__datosUsuario--datosPersonales label input {
+  padding: 2.5rem;
+}
+
+#fieldset1 {
+  padding: 1rem;
+}
+
+#fieldset2 {
+  padding: 1rem;
+}
+
 /* ------MEDIA QUERIES------- */
 @media (min-width: 400px) and (max-width: 768px) {
   .header {
