@@ -1,0 +1,22 @@
+/* ------PAGINA LOGOUT----------- */
+#containerLogout{
+    padding: 0%;
+}
+.logout{
+    grid-area: logout;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(../assets/fondomanga.jpg);
+    height: 100vh;
+}
+.logout img{
+    border: 6px solid black;
+}
+.logout__saludo{
+    background-color: white;
+    padding: 1rem;
+    border: 5px solid black;
+}

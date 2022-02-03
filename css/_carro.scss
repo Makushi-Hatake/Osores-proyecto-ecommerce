@@ -1,0 +1,55 @@
+/* -----PAGINA CARRO DE COMPRAS------- */
+#containerCarro{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "sectionCarro"
+    "footer"
+    ;
+    padding: 0%;
+}
+.tuCompra{
+    display: flex;
+    padding: 1.5rem;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    
+}
+.sectionCarro{
+    grid-area: sectionCarro;
+    @include grid-item(2, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    padding: 3rem;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(../assets/fondomanga.jpg);
+}
+.procesoPago{
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+.listado{
+    padding:3rem;
+}
+.metodosPago{
+    padding: 2rem;
+}
+.metodosPago i{
+    padding: 0.5rem;
+}
+.pagando{
+    display: flex;
+    flex-direction: column;
+}
+.comprar{
+    padding: 0.5rem;
+}
