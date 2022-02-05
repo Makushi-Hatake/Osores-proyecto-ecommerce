@@ -28,6 +28,9 @@
     box-shadow: map-get($item-box-design,box-shadow);
     flex-direction: map-get($item-box-design ,flex-direction);
     align-items: map-get($item-box-design , $key:align-items);
+    i{
+        padding-bottom: 0.5rem;
+    }
 }
 .indumentaria__item2{
      @include grid-item(1, 2);
@@ -38,4 +41,11 @@
      @include grid-item(1, 3);
      @extend .indumentaria__item1;
      grid-area: item3;
+}
+form{
+    padding-top: 1rem;
+}
+p{
+    font-weight: bold;
+    padding-top: 0.25rem;
 }
