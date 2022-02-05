@@ -1,14 +1,15 @@
 /* ------PAGINA LOGOUT----------- */
+@import "map";
 #containerLogout{
     padding: 0%;
 }
 .logout{
     grid-area: logout;
-    display: flex;
-    flex-direction: column;
+    display: map-get($item-box-design ,display );
+    flex-direction: map-get($item-box-design , flex-direction );
     padding: 3rem;
     justify-content: space-around;
-    align-items: center;
+    align-items: map-get($item-box-design , align-items );
     background-image: url(../assets/fondomanga.jpg);
     height: 100vh;
 }

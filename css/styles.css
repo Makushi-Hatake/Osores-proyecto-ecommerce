@@ -9,7 +9,7 @@ body {
   margin: 0%;
 }
 
-/**---- Anidado de Header y Navbar -----**/
+/**---- Header -----**/
 #container {
   padding: 0px;
   height: 100vh;
@@ -54,11 +54,12 @@ body {
   text-decoration: underline;
 }
 
+/**---- Navbar -----**/
 .nav {
   padding-top: 1rem;
 }
 
-/**----FOOTER Anidado-------**/
+/**----FOOTER-------**/
 .footer {
   background-color: black;
   height: 3.5rem;
@@ -104,7 +105,7 @@ body {
   text-decoration: underline;
 }
 
-/**------- INDEX anidado -------**/
+/**------- INDEX -------**/
 .section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -473,7 +474,6 @@ body {
   padding: 3rem;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  align-items: center;
   background-image: url(../assets/fondomanga.jpg);
   height: 100vh;
 }
