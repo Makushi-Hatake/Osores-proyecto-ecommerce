@@ -540,6 +540,49 @@ p {
   padding: 1rem;
 }
 
+#sectionError {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(/assets/fondomanga.jpg);
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#sectionError div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 3px solid black;
+  -webkit-box-shadow: 15px 15px 10px black;
+          box-shadow: 15px 15px 10px black;
+  background-color: white;
+}
+
+#sectionError div p {
+  padding: 1rem;
+}
+
+#sectionError div a {
+  padding-bottom: 1rem;
+}
+
+#sectionError div h2 {
+  font-weight: bold;
+}
+
 /* ------MEDIA QUERIES------- */
 @media (min-width: 400px) and (max-width: 768px) {
   .header {
