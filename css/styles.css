@@ -308,7 +308,6 @@ p {
       -ms-flex-align: center;
           align-items: center;
   background-image: url(../assets/fondomanga.jpg);
-  height: 100vh;
 }
 
 .comentarios {
@@ -602,6 +601,9 @@ p {
     height: auto;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+  }
+  .formularioRegistro {
+    height: auto;
   }
   #containerIndumentaria {
     width: 100%;
