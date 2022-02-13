@@ -1,13 +1,10 @@
-/**---- Header -----**/
+/**---- Navber -----**/
 #container{
     padding:0px;
     height: 100vh;
 }
-.header{
-    height: 5rem;
-    background-color: black;
+.navbar{
     position: sticky;
-    top: 0%;
     box-shadow: 0px 15px 15px white;
     ul{
         display: flex;
@@ -26,10 +23,8 @@
         color: white;
     }
     a:hover{
-        text-decoration: underline;
+        color: white;
     }
+    
 }
-/**---- Navbar -----**/
-.nav{
-    padding-top: 1rem;
-}
+

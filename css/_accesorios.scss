@@ -21,6 +21,7 @@
     }
 }
 .accesorios__item1{
+    margin: 0.5rem;
     grid-area: item1;
     @include grid-item(1, 1);
     border: map-get($item-box-design,border);

@@ -22,20 +22,26 @@ body{
 @import "enconstruccion";
 /* ------MEDIA QUERIES------- */
 @media (min-width: 400px) and (max-width:768px) {
-    .header{
-        height: 8rem;
-        position: unset;
-    }
     .accesorios{
         display:flex;
         flex-direction:column;
+        height: auto;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
     }
     .indumentaria{
         display: flex;
         flex-direction:column;
+        height: auto;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
     }
     #containerIndumentaria{
         width: 100%;
+    }
+    .footer{
+        padding: 0.5rem;
+        margin-top: 0.5rem;
     }
     .footer__content1{
         display: flex;
@@ -45,7 +51,7 @@ body{
         display: none;
     }   
 }
-@media (min-width: 768px) and (max-width:1400px) {
+@media (min-width: 769px) and (max-width:1400px) {
     .header{
         height: 6rem;
         li{

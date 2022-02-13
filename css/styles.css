@@ -9,23 +9,20 @@ body {
   margin: 0%;
 }
 
-/**---- Header -----**/
+/**---- Navber -----**/
 #container {
   padding: 0px;
   height: 100vh;
 }
 
-.header {
-  height: 5rem;
-  background-color: black;
+.navbar {
   position: -webkit-sticky;
   position: sticky;
-  top: 0%;
   -webkit-box-shadow: 0px 15px 15px white;
           box-shadow: 0px 15px 15px white;
 }
 
-.header ul {
+.navbar ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -40,23 +37,18 @@ body {
           align-items: center;
 }
 
-.header ul li {
+.navbar ul li {
   display: inline-block;
   padding: 0.5rem;
 }
 
-.header a {
+.navbar a {
   text-decoration: none;
   color: white;
 }
 
-.header a:hover {
-  text-decoration: underline;
-}
-
-/**---- Navbar -----**/
-.nav {
-  padding-top: 1rem;
+.navbar a:hover {
+  color: white;
 }
 
 /**----FOOTER-------**/
@@ -162,6 +154,7 @@ body {
 }
 
 .accesorios__item1, .accesorios__item2, .accesorios__item3 {
+  margin: 0.5rem;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: item1;
@@ -240,6 +233,7 @@ p {
 }
 
 .indumentaria__item1, .indumentaria__item2, .indumentaria__item3 {
+  margin: 0.5rem;
   -ms-grid-row: 1;
   grid-row: 1;
   -ms-grid-column: 1;
@@ -585,10 +579,6 @@ p {
 
 /* ------MEDIA QUERIES------- */
 @media (min-width: 400px) and (max-width: 768px) {
-  .header {
-    height: 8rem;
-    position: unset;
-  }
   .accesorios {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -597,6 +587,9 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: auto;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
   .indumentaria {
     display: -webkit-box;
@@ -606,9 +599,16 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: auto;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
   #containerIndumentaria {
     width: 100%;
+  }
+  .footer {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
   }
   .footer__content1 {
     display: -webkit-box;
@@ -624,7 +624,7 @@ p {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1400px) {
+@media (min-width: 769px) and (max-width: 1400px) {
   .header {
     height: 6rem;
   }

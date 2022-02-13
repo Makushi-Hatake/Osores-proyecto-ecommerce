@@ -20,6 +20,7 @@
     width: 10rem;
 }
 .indumentaria__item1{
+    margin: 0.5rem;
     @include grid-item(1, 1);
     grid-area: item1;
     border: map-get($item-box-design,border);
