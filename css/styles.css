@@ -134,7 +134,7 @@ body {
 .accesorios {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "item1 item2 item3";
+      grid-template-areas: "item1 item2 item3" "item4 item5 item6";
   height: 100vh;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -153,7 +153,7 @@ body {
   cursor: pointer;
 }
 
-.accesorios__item1, .accesorios__item2, .accesorios__item3 {
+.accesorios__item1, .accesorios__item2, .accesorios__item3, .accesorios__item4, .accesorios__item5, .accesorios__item6 {
   margin: 0.5rem;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -176,7 +176,7 @@ body {
           align-items: center;
 }
 
-.accesorios__item1 i, .accesorios__item2 i, .accesorios__item3 i {
+.accesorios__item1 i, .accesorios__item2 i, .accesorios__item3 i, .accesorios__item4 i, .accesorios__item5 i, .accesorios__item6 i {
   padding-bottom: 0.5rem;
 }
 
@@ -196,6 +196,30 @@ body {
   grid-area: item3;
 }
 
+.accesorios__item4 {
+  grid-row: 1;
+  grid-column: 4;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: item4;
+}
+
+.accesorios__item5 {
+  grid-row: 1;
+  grid-column: 5;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: item5;
+}
+
+.accesorios__item6 {
+  grid-row: 1;
+  grid-column: 6;
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: item6;
+}
+
 form {
   padding-top: 1rem;
 }
@@ -213,7 +237,7 @@ p {
 .indumentaria {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "item1 item2 item3";
+      grid-template-areas: "item1 item2 item3" "item4 item5 item6";
   height: 100vh;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -232,7 +256,7 @@ p {
   width: 10rem;
 }
 
-.indumentaria__item1, .indumentaria__item2, .indumentaria__item3 {
+.indumentaria__item1, .indumentaria__item2, .indumentaria__item3, .indumentaria__item4, .indumentaria__item5, .indumentaria__item6 {
   margin: 0.5rem;
   -ms-grid-row: 1;
   grid-row: 1;
@@ -257,7 +281,7 @@ p {
           align-items: center;
 }
 
-.indumentaria__item1 i, .indumentaria__item2 i, .indumentaria__item3 i {
+.indumentaria__item1 i, .indumentaria__item2 i, .indumentaria__item3 i, .indumentaria__item4 i, .indumentaria__item5 i, .indumentaria__item6 i {
   padding-bottom: 0.5rem;
 }
 
@@ -279,6 +303,36 @@ p {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: item3;
+}
+
+.indumentaria__item4 {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 4;
+  grid-column: 4;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: item4;
+}
+
+.indumentaria__item5 {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 5;
+  grid-column: 5;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: item5;
+}
+
+.indumentaria__item6 {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 6;
+  grid-column: 6;
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: item6;
 }
 
 form {
@@ -515,6 +569,7 @@ p {
       -ms-flex-align: center;
           align-items: center;
   background-color: white;
+  padding: 1rem;
 }
 
 .formularioRegistro__datosUsuario--datosPersonales {
