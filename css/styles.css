@@ -9,7 +9,7 @@ body {
   margin: 0%;
 }
 
-/**---- Navber -----**/
+/**---- NAVBAR -----**/
 #container {
   padding: 0px;
   height: 100vh;
@@ -125,6 +125,58 @@ body {
           box-shadow: -10px -10px 15px black, 10px 10px 15px black;
 }
 
+/* -------PAGINA SOBRE NOSOTROS */
+#containerAboutus {
+  padding: 0%;
+}
+
+.descripcion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../assets/fondomanga.jpg);
+}
+
+.comentarios {
+  border: 3px solid black;
+  background-color: white;
+  padding: 0.25rem;
+}
+
+.comentarios textarea {
+  resize: none;
+}
+
+.comentarios--campo {
+  padding: 0.25rem;
+}
+
+.nombremarca {
+  background-color: white;
+  margin-bottom: 1rem;
+  border: 3px solid black;
+  padding: 0.15rem;
+}
+
+.historia {
+  background-color: white;
+  margin-bottom: 1rem;
+  border: 3px solid black;
+  width: 85vh;
+}
+
+p {
+  text-align: center;
+}
+
 /**----PAGINA ACCESORIOS------**/
 #containerAccesorios {
   padding: 0%;
@@ -227,6 +279,142 @@ form {
 p {
   font-weight: bold;
   padding-top: 0.25rem;
+}
+
+/* -----PAGINA CARRO DE COMPRAS------- */
+#containerCarro {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "header" "sectionCarro" "footer";
+  padding: 0%;
+}
+
+.tuCompra {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1.5rem;
+  border: 3px solid black;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+}
+
+.sectionCarro {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: sectionCarro;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem;
+  height: 100vh;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  align-items: center;
+  background-image: url(../assets/fondomanga.jpg);
+}
+
+.procesoPago {
+  border: 3px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+}
+
+.listado {
+  padding: 3rem;
+}
+
+.metodosPago {
+  padding: 2rem;
+}
+
+.metodosPago i {
+  padding: 0.5rem;
+}
+
+.pagando {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.comprar {
+  padding: 0.5rem;
+}
+
+/* ----EN CONSTRUCCION ---- */
+#sectionError {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(../assets/fondomanga.jpg);
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#sectionError div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 3px solid black;
+  -webkit-box-shadow: 15px 15px 10px black;
+          box-shadow: 15px 15px 10px black;
+  background-color: white;
+}
+
+#sectionError div p {
+  padding: 1rem;
+}
+
+#sectionError div a {
+  padding-bottom: 1rem;
+}
+
+#sectionError div h2 {
+  font-weight: bold;
 }
 
 /**--------PAGINA INDUMENTARIA----------**/
@@ -344,58 +532,6 @@ p {
   padding-top: 0.25rem;
 }
 
-/* -------PAGINA SOBRE NOSOTROS */
-#containerAboutus {
-  padding: 0%;
-}
-
-.descripcion {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 3rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-image: url(../assets/fondomanga.jpg);
-}
-
-.comentarios {
-  border: 3px solid black;
-  background-color: white;
-  padding: 0.25rem;
-}
-
-.comentarios textarea {
-  resize: none;
-}
-
-.comentarios--campo {
-  padding: 0.25rem;
-}
-
-.nombremarca {
-  background-color: white;
-  margin-bottom: 1rem;
-  border: 3px solid black;
-  padding: 0.15rem;
-}
-
-.historia {
-  background-color: white;
-  margin-bottom: 1rem;
-  border: 3px solid black;
-  width: 85vh;
-}
-
-p {
-  text-align: center;
-}
-
 /* ------PAGINA LOGOUT----------- */
 #containerLogout {
   padding: 0%;
@@ -428,98 +564,6 @@ p {
   background-color: white;
   padding: 1rem;
   border: 5px solid black;
-}
-
-/* -----PAGINA CARRO DE COMPRAS------- */
-#containerCarro {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "header" "sectionCarro" "footer";
-  padding: 0%;
-}
-
-.tuCompra {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 1.5rem;
-  border: 3px solid black;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: white;
-}
-
-.sectionCarro {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: sectionCarro;
-  -ms-grid-row: 2;
-  grid-row: 2;
-  -ms-grid-column: 1;
-  grid-column: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 3rem;
-  height: 100vh;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  align-items: center;
-  background-image: url(../assets/fondomanga.jpg);
-}
-
-.procesoPago {
-  border: 3px solid black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: white;
-}
-
-.listado {
-  padding: 3rem;
-}
-
-.metodosPago {
-  padding: 2rem;
-}
-
-.metodosPago i {
-  padding: 0.5rem;
-}
-
-.pagando {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.comprar {
-  padding: 0.5rem;
 }
 
 /* -------PAGINA PARA REGISTRARSE */
@@ -586,49 +630,6 @@ p {
 
 #fieldset2 {
   padding: 1rem;
-}
-
-#sectionError {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-image: url(../assets/fondomanga.jpg);
-  height: 100vh;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#sectionError div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 3px solid black;
-  -webkit-box-shadow: 15px 15px 10px black;
-          box-shadow: 15px 15px 10px black;
-  background-color: white;
-}
-
-#sectionError div p {
-  padding: 1rem;
-}
-
-#sectionError div a {
-  padding-bottom: 1rem;
-}
-
-#sectionError div h2 {
-  font-weight: bold;
 }
 
 /* ------MEDIA QUERIES------- */

@@ -8,18 +8,8 @@ body{
     padding: 0%;
     margin: 0%;
 }
-@import "mixin";
-@import "map";
-@import "header";
-@import "footer";
-@import "index";
-@import "accesorios";
-@import "indumentaria";
-@import "aboutus";
-@import "logout";
-@import "carro";
-@import "registrarse";
-@import "enconstruccion";
+@import "navbarfooter";
+@import "paginas";
 /* ------MEDIA QUERIES------- */
 @media (min-width: 400px) and (max-width:768px) {
     .accesorios{
