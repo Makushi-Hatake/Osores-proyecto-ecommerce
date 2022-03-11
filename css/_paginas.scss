@@ -124,6 +124,22 @@ p{
     @extend .accesorios__item1;
     @include grid-item(1,6);
     grid-area: item6;
+    border-radius: 15px;
+    .card{
+        align-items: center;
+        border-radius: 15px;
+    .card-body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        background-color: rgb(241, 238, 238);
+        i{
+            padding-top: 0.5rem;
+            
+        }
+    }
+    }
 }
 form{
     padding-top: 1rem;
