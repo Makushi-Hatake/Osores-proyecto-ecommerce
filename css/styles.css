@@ -212,6 +212,7 @@ p {
   grid-row: 1;
   grid-column: 1;
   border: 3px solid black;
+  border-radius: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -229,6 +230,45 @@ p {
 
 .accesorios__item1 i, .accesorios__item2 i, .accesorios__item3 i, .accesorios__item4 i, .accesorios__item5 i, .accesorios__item6 i {
   padding-bottom: 0.5rem;
+}
+
+.accesorios__item1 .card, .accesorios__item2 .card, .accesorios__item3 .card, .accesorios__item4 .card, .accesorios__item5 .card, .accesorios__item6 .card {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 15px;
+}
+
+.accesorios__item1 .card .card-body, .accesorios__item2 .card .card-body, .accesorios__item3 .card .card-body, .accesorios__item4 .card .card-body, .accesorios__item5 .card .card-body, .accesorios__item6 .card .card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px;
+  background-color: #f1eeee;
+}
+
+.accesorios__item1 .card .card-body i, .accesorios__item2 .card .card-body i, .accesorios__item3 .card .card-body i, .accesorios__item4 .card .card-body i, .accesorios__item5 .card .card-body i, .accesorios__item6 .card .card-body i {
+  padding-top: 0rem;
+}
+
+.accesorios__item1 .card .card-body .card-text, .accesorios__item2 .card .card-body .card-text, .accesorios__item3 .card .card-body .card-text, .accesorios__item4 .card .card-body .card-text, .accesorios__item5 .card .card-body .card-text, .accesorios__item6 .card .card-body .card-text {
+  font-weight: normal;
+  font-size: small;
+}
+
+.accesorios__item1 .card .card-body form, .accesorios__item2 .card .card-body form, .accesorios__item3 .card .card-body form, .accesorios__item4 .card .card-body form, .accesorios__item5 .card .card-body form, .accesorios__item6 .card .card-body form {
+  padding: 0%;
+}
+
+.accesorios__item1 .card .card-body p, .accesorios__item2 .card .card-body p, .accesorios__item3 .card .card-body p, .accesorios__item4 .card .card-body p, .accesorios__item5 .card .card-body p, .accesorios__item6 .card .card-body p {
+  margin: 0px;
 }
 
 .accesorios__item2 {
@@ -269,42 +309,6 @@ p {
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: item6;
-  border-radius: 15px;
-}
-
-.accesorios__item6 .card {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 15px;
-}
-
-.accesorios__item6 .card .card-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0px;
-  background-color: #f1eeee;
-}
-
-.accesorios__item6 .card .card-body i {
-  padding-top: 0.5rem;
-}
-
-form {
-  padding-top: 1rem;
-}
-
-p {
-  font-weight: bold;
-  padding-top: 0.25rem;
 }
 
 /* -----PAGINA CARRO DE COMPRAS------- */
